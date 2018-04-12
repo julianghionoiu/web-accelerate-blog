@@ -80,8 +80,22 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
 
+
+
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+marked:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
+  modifyAnchors: ''
+  autolink: true
+
+
 ## Themes: https://hexo.io/themes/
 theme: corporate
 
