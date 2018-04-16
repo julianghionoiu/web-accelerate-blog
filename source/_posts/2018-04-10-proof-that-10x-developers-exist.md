@@ -61,6 +61,7 @@ A total of 120 software developer professionals have currently taken our coding 
 The challenges have been used under three circumstances:
 1. Developers working for a software company, to form the company benchmark
 2. Candidates applying for development roles at the previously mentioned software companies
+3. Developers participating in a coding technique workshop
 
 Every result is anonymised, so no one knows who the other developers are.
 Everyone who takes the challenge gets access to a report which shows where they stand and how the other people have performed.
