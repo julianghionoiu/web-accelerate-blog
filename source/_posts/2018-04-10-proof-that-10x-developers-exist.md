@@ -4,7 +4,7 @@ date: 2018-04-10
 tags:
 - Data-Driven Article
 - Skills-Based Hiring
-thumbnail: /content/distribution_of_challenge_times.png
+thumbnail: /content/banded_distribution_of_performance.png
 lede: "
 Controlled data is emerging to show that 10X differences between developers might exist. But the occurrence is low.<br/>
 More interesting is the fact the 2x and 3x differences are pretty common within existing teams.
@@ -13,21 +13,21 @@ featured: true
 ---
 
 I am going to open up a controversial subject, the 10x developer myth.
-This subject has been debated by the industry for decades, so why bringing it up?
-Well, I have some interesting data to show that might change the way you view things.
+This subject has been debated by the industry for decades, so why bring it up again?
+Well, I have some interesting data that might change the way you think about developer productivity.
 
-To be on the same page, let's use this definition from Techpedia [(1)](#1) about what a 10x developer is:
+To ensure that we are on the same page as to what a 10x developer is, let’s use this definition from Techpedia [(1)](#1):
 > A 10x developer is an individual who is thought to be as productive as 10 others in his or her field. The 10x developer would produce 10 times the outcomes of other colleagues, in a production, engineering or software design environment.
 
-On one side you have articles where people share their experience on developer productivity, while on the other side you have people warning against the 10x developer.
+Currently, there is little agreement on how 10x developers look like and whether they are good or bad.
 Usually the arguments against the 10x developer fall into three categories:
-- No reliable data - The data behind the original articles is being disputed [(2)](#2)
+- Lack of reliable data - The data behind the original articles is being disputed [(2)](#2)
 - Speed is bad - Increased speed leads to technical debt and thus slows down the entire team [(3)](#3)
 - Superheros are bad - The fact that such developers exist its detrimental to the culture of the company [(4)](#4)
 
 ## New data is starting to emerge
 
-At Accelerate.io we are running our technical assessments as controlled experiments.
+At Accelerate we are running our technical assessments as controlled experiments.
 We are doing this in order to reliably compare developer productivity. I will go into more details in the next section.
 
 It is not just us, other people have also started measuring productivity.
@@ -38,18 +38,18 @@ Steve Fenton recently wrote an article [(5)](#5) where he shares the data he had
 
 How do you measure developer productivity in a controlled way?
 
-Our take was to simulate a couple of development cycles in a controlled environment and get different developers to go through exactly the same flow.
+Our approach is to simulate multiple development cycles in a controlled environment and ask different developers to go through exactly the same flow.
 
 This eventually took the form of two coding challenges with 5 rounds designed in such a way that we can use time as a proxy for quality:
 - Good code helps implement new features faster, it has multiple incremental requirements that put a lot of pressure on the design
 - Bad code will translate into time penalties
 
-> With this experimental setup we are describing quality code as code that is able to cope with future requirements.
+> With this approach we are describing quality code as code that is able to cope with future requirements.
 
 By translating everything into time, we now have a consistent metric which we can measure.
 We are interested in the cumulative time, that is the physical time taken plus time penalties.
 
-In order not to favour anyone, we used a domain that is well known and we allowed the developers to use their own tools.
+To avoid favouring anyone, we used a domain that is well known and we allowed the developers to use their own tools.
 
 This is how a result looks like. You can see the time distribution and the penalties in red:
 ![Incremental Requirements Coding Challenge](/content/incremental_requirements.png)
@@ -61,7 +61,9 @@ A total of 120 software developer professionals have currently taken our coding 
 The challenges have been used under three circumstances:
 1. Developers working for a software company, to form the company benchmark
 2. Candidates applying for development roles at the previously mentioned software companies
-3. Developers participating in a coding technique workshop (BeFaster)
+
+Every result is anonymised, so no one knows who the other developers are.
+Everyone who takes the challenge gets access to a report which shows where they stand and how the other people have performed.
 
 ## Results
 
@@ -95,7 +97,7 @@ Given that these are extremes, we hypothesise that:
 
 A more interesting question is what difference should we expect in the real world.
 
-If we visualise this as a chart, we immediately notice the normal distribution.
+If we visualise this as a chart, we immediately notice the normal bell curve distribution.
 ![Distribution of challenge time](/content/banded_distribution_of_performance.png)
 
 Given that around half of the people are situated in the middle bands ( the 1.5x ) we can draw the conclusion that 2x and 3x differences are quite common.
@@ -105,7 +107,7 @@ Given that around half of the people are situated in the middle bands ( the 1.5x
 
 Seeing that 2x and 3x differences are quite common, this opens up two strategies for improving the performance of a team:
 1. **Raising the bar** by applying objective assessments during the hiring process to identify 2x and 3x developers
-2. **Investment in training** targeted at improving the team's coding technique. Judging from the data set, a 2x improvement is achievable.
+2. **Investment in training** targeted at improving the team's development capability. Judging from the data set, a 2x improvement is achievable.
 
 The coding challenge is focused on coding skill, but a developer has to possess a broader set of skills:
 - Ability to work with legacy code
@@ -114,7 +116,7 @@ The coding challenge is focused on coding skill, but a developer has to possess 
 - Deployments and configuration management
 - Security and performance monitoring
 
-> We haven't found any superheroes yet, but striving for mastery surely is a good thing. A master developer, someone who has mastered all the skills, could achieve greater levels of productivity and might even reach 10x. As for superheroes.. we are on the lookout.
+> Striving for mastery is undoubtedly a good thing. A master developer, who has mastered all the skills, could achieve greater levels of productivity and might even reach 10x.
 
 ## Limitations
 
@@ -122,20 +124,18 @@ As with all experiments this is an approximation of the real world and it is lim
 
 The main limitations are:
 - Code quality is transformed into time by using incremental requirements, this does not cover all possible quality aspects
-- We only looked at individual productivity, but software development happens in the context of a team
+- Our analysis considered individual productivity, but software development happens in the context of a team
 - We only focused on the act of writing code, but a developer is also involved in deployments, QA and architectural decisions
 
-## Participate
+## Getting involved
 
-The experiment is ongoing, so if you or your team is interested in taking part, please contact me at julian.ghionoiu@accelerate.io.
+The experiment is ongoing, so if you or your team is interested in taking the challenge and seeing how you compare (everything is anonymised), please contact me at julian.ghionoiu@accelerate.io.
+
 I promise you will gain unique insights into developer productivity.
 
 &nbsp;
 
 ---
-
-#### Access to data
-If you found this article interesting and would like to have a look at the underlying data, please message me.
 
 #### References
 <a name="1">1.</a> https://www.techopedia.com/definition/31673/10x-developer
